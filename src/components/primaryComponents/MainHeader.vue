@@ -1,7 +1,9 @@
 <template>
     <header>
         <div class="wrapper">
-            <img src="../../assets/img/dc-logo.png" alt="dc-logo" />
+            <div class="logo-container">
+                <img src="../../assets/img/dc-logo.png" alt="dc-logo" />
+            </div>
             <nav>
                 <ul>
                     <li><a>pagina</a></li>
@@ -28,23 +30,37 @@ header {
     .wrapper {
         display: flex;
         justify-content: space-between;
-        background-color: red;
 
         width: 90%;
         margin: 0 auto;
     }
 
+    .logo-container {
+        padding: 0.4rem 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: 70%;
+        }
+    }
+
     ul {
         height: 100%;
-        background-color: antiquewhite;
+
         display: inline-flex;
 
         li {
+            &:hover {
+                border-bottom: 4px solid blue;
+            }
             height: 100%;
             list-style-type: none;
-            background-color: aqua;
+            /* background-color: aqua; */
 
-            padding: 0 0.5rem;
+            padding: 0 1rem;
 
             display: flex;
             align-items: center;
@@ -54,7 +70,9 @@ header {
                 line-height: 100%;
                 text-align: center;
 
-                font-size: 1rem;
+                font-size: 0.8rem;
+                font-weight: 600;
+                text-transform: uppercase;
             }
         }
     }
