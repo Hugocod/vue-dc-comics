@@ -15,15 +15,22 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .service {
     display: flex;
     justify-content: center;
     align-items: center;
 
     img {
-        width: 50px;
+        width: fit-content;
         height: 50px;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        color: white;
+        padding: 1rem;
     }
 }
 </style>

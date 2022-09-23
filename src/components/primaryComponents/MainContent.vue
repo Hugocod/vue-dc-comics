@@ -3,11 +3,17 @@
         <div class="content"></div>
         <div class="products">
             <div class="wrapper">
-                <SingleService url="https://cdn.lovesavingsgroup.com/logos/square.jpg" serviceTitle="servizio1"></SingleService>
-                <SingleService url="https://cdn.lovesavingsgroup.com/logos/square.jpg" serviceTitle="servizio2"></SingleService>
-                <SingleService url="https://cdn.lovesavingsgroup.com/logos/square.jpg" serviceTitle="servizio3"></SingleService>
-                <SingleService url="https://cdn.lovesavingsgroup.com/logos/square.jpg" serviceTitle="servizio4"></SingleService>
-                <SingleService url="https://cdn.lovesavingsgroup.com/logos/square.jpg" serviceTitle="servizio5"></SingleService>
+                <!-- 
+                L'interpolazione 'stramba' su URL risolve un noto problema su webpack 
+                APPROFONDIMENTI QUI : https://stackoverflow.com/questions/57349167/vue-js-dynamic-image-src-with-webpack-require-not-working 
+                -->
+                <SingleService :url="require(`../../assets/img/${'buy-comics-digital-comics.png'}`)" serviceTitle="digital comics"></SingleService>
+                <SingleService :url="require(`../../assets/img/${'buy-comics-merchandise.png'}`)" serviceTitle="dc merchandise"></SingleService>
+                <SingleService :url="require(`../../assets/img/${'buy-comics-subscriptions.png'}`)" serviceTitle="subscription"></SingleService>
+                <SingleService :url="require(`../../assets/img/${'buy-comics-shop-locator.png'}`)" serviceTitle="comic shop locator"></SingleService>
+                <SingleService :url="require(`../../assets/img/${'buy-dc-power-visa.svg'}`)" serviceTitle="dc power visa"></SingleService>
+
+                <img :src="x" alt="" />
             </div>
         </div>
     </div>
@@ -18,9 +24,11 @@ import SingleService from "../secondaryComponents/SingleService.vue";
 
 export default {
     name: "MainContent",
+
     components: {
         SingleService,
     },
+    mounted() {},
 };
 </script>
 
