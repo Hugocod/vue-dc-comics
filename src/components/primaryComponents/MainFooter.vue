@@ -13,11 +13,13 @@
                 <img src="../../assets/img/dc-logo-bg.png" alt="dc-logo" />
             </div>
         </div>
+        <MiniFooter />
     </footer>
 </template>
 
 <script>
 import SingleList from "../secondaryComponents/SingleList.vue";
+import MiniFooter from "../secondaryComponents/MiniFooter.vue";
 
 export default {
     name: "MainFooter",
@@ -33,6 +35,7 @@ export default {
     },
     components: {
         SingleList,
+        MiniFooter,
     },
 };
 </script>
