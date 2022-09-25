@@ -12,8 +12,6 @@
                 <SingleService :url="require(`../../assets/img/${'buy-comics-subscriptions.png'}`)" serviceTitle="subscription"></SingleService>
                 <SingleService :url="require(`../../assets/img/${'buy-comics-shop-locator.png'}`)" serviceTitle="comic shop locator"></SingleService>
                 <SingleService :url="require(`../../assets/img/${'buy-dc-power-visa.svg'}`)" serviceTitle="dc power visa"></SingleService>
-
-                <img :src="x" alt="" />
             </div>
         </div>
     </div>

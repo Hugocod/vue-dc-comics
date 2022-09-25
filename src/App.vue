@@ -2,6 +2,7 @@
     <div id="app">
         <MainHeader />
         <MainContent />
+        <MainFooter />
     </div>
 </template>
 
@@ -12,6 +13,7 @@
 /* import { ButtonPizza, ButtonPomodoro } from "./components/multiComponent.js"; */
 import MainHeader from "./components/primaryComponents/MainHeader.vue";
 import MainContent from "./components/primaryComponents/MainContent.vue";
+import MainFooter from "./components/primaryComponents/MainFooter.vue";
 
 //////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////
@@ -20,6 +22,7 @@ export default {
     components: {
         MainHeader,
         MainContent,
+        MainFooter,
     },
 };
 </script>
