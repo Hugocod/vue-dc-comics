@@ -6,22 +6,32 @@
             </div>
             <nav>
                 <ul>
-                    <li><a>pagina</a></li>
-                    <li><a>pagina</a></li>
-                    <li><a>pagina</a></li>
-                    <li><a>pagina</a></li>
-                    <li><a>pagina</a></li>
-                    <li><a>pagina</a></li>
-                    <li><a>pagina</a></li>
+                    <li><a>characters</a></li>
+                    <li><a>comics</a></li>
+                    <li><a>movies</a></li>
+                    <li><a>tv</a></li>
+                    <li><a>games</a></li>
+                    <li><a>collectibles</a></li>
+                    <li><a>videos</a></li>
+                    <li><a>fans</a></li>
+                    <li><a>news</a></li>
+                    <li><a>shop</a></li>
                 </ul>
             </nav>
         </div>
+
+        <JumboTron />
     </header>
 </template>
 
 <script>
+import JumboTron from "../secondaryComponents/JumboTron.vue";
+
 export default {
     name: "MainHeader",
+    components: {
+        JumboTron,
+    },
 };
 </script>
 
@@ -47,6 +57,10 @@ header {
         }
     }
 
+    nav {
+        padding-bottom: 4px;
+    }
+
     ul {
         height: 100%;
 
@@ -55,6 +69,9 @@ header {
         li {
             &:hover {
                 border-bottom: 4px solid blue;
+                a {
+                    color: blue;
+                }
             }
             height: 100%;
             list-style-type: none;
