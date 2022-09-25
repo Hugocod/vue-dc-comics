@@ -122,10 +122,10 @@ export default {
 .cards-container {
     background-color: #1c1c1c;
 
-    padding: 3rem 0;
+    padding: 4rem 0;
 
     .wrapper {
-        width: 90% !important;
+        width: 80% !important;
         display: flex;
         flex-wrap: wrap;
         width: 100%;
@@ -153,7 +153,7 @@ export default {
     padding: 3rem;
 
     .wrapper {
-        width: 90%;
+        width: 80%;
 
         height: 100%;
         margin: 0 auto;

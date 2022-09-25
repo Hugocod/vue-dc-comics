@@ -28,7 +28,7 @@ export default {
 }
 
 .wrapper {
-    width: 90%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -49,7 +49,8 @@ export default {
         h1 {
             color: #0082f9;
             text-transform: uppercase;
-            font-size: 1rem;
+            font-size: 1.4rem;
+            font-family: "Antonio", sans-serif;
         }
     }
 

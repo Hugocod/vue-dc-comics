@@ -41,7 +41,7 @@ header {
         display: flex;
         justify-content: space-between;
 
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
     }
 
@@ -53,7 +53,7 @@ header {
         align-items: center;
 
         img {
-            height: 70%;
+            height: 80%;
         }
     }
 
@@ -68,9 +68,9 @@ header {
 
         li {
             &:hover {
-                border-bottom: 4px solid blue;
+                border-bottom: 4px solid #0082f9;
                 a {
-                    color: blue;
+                    color: #0082f9;
                 }
             }
             height: 100%;
@@ -87,9 +87,10 @@ header {
                 line-height: 100%;
                 text-align: center;
 
-                font-size: 0.8rem;
-                font-weight: 600;
+                font-size: 0.9rem;
+                font-weight: 800;
                 text-transform: uppercase;
+                font-family: "Antonio", sans-serif;
             }
         }
     }

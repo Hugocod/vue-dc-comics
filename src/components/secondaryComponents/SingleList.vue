@@ -33,7 +33,8 @@ export default {
         color: white;
         text-transform: uppercase;
 
-        font-size: 1.1rem;
+        font-size: 1.3rem;
+        font-family: "Antonio", sans-serif;
     }
 }
 </style>

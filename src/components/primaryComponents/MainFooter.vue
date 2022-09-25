@@ -48,13 +48,15 @@ footer {
     background-size: cover;
 
     .wrapper {
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         overflow: hidden;
+
+        padding: 2rem 0;
 
         .resources {
             height: 100%;

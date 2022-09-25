@@ -31,7 +31,7 @@ export default {
 }
 
 .label-container {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 
     h1 {
@@ -41,9 +41,10 @@ export default {
         padding: 0.7rem 1.2rem;
         color: white;
         text-transform: uppercase;
-        font-size: 1.5rem;
+        font-size: 2rem;
 
         transform: translateY(50%);
+        font-family: "Antonio", sans-serif;
     }
 }
 </style>

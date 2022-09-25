@@ -28,5 +28,9 @@ figure {
         font-size: 0.8rem;
         font-weight: 600;
     }
+
+    img {
+        width: 85%;
+    }
 }
 </style>
